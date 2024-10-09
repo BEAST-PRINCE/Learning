@@ -3,7 +3,7 @@ import numpy as np
 l = [1,2,3,4]
 # print(l)
 
-arr1 = np.array([1,2,3,4,5,6,7,8,9,10])
+arr1 = np.array([-2,-1,1,2,3,4,5,6,7,8,9,10])
 # print(arr1)
 # print(arr1.shape)
 
@@ -41,5 +41,54 @@ arr5 = np.array(l2)
 
 # arr6 = np.array([[10,11,12,13,14,15,16], [0,1,2,3,4,5,6,7,8,9]], dtype=object)
 arr6 = np.array([[10,11,12,13,14,15,16], [0,1,2,3,4,5,6]])
-print(arr6[1,5])  # print(arr6[1][5])
-print(arr6[0:1, 2:5])
+# print(arr6[1,5])  # print(arr6[1][5])
+# print(arr6[0:1, 2:5])
+
+
+
+#####################################################
+
+# # Square root of all elem
+# print(np.sqrt(arr6))
+
+# # Absolute value
+# print(np.absolute(arr1))
+
+# # Exponentials
+# print(np.exp(arr1))
+
+# # Max Min
+# print(np.max(arr6))
+# print(np.min(arr6))
+
+# # Negative or positive
+# print(np.sign(arr1))
+
+# # Trigonometry
+# print(np.sin(arr1))
+# print(np.cos(arr1))
+# print(np.tan(arr1))
+
+# # Log
+# print(np.log(arr1))
+
+
+
+########################################################
+
+# view1 = arr1.view()
+# print("Original: ", arr1, "View: ", view1)
+# arr1[0] = 100
+# print("Original: ", arr1, "View: ", view1)
+# view1[0] = -200
+# print("Original: ", arr1, "View: ", view1)
+# print(type(view1), id(view1), id(arr1))
+
+
+copy1 = arr1.copy()
+print("Original: ", arr1, "Copy: ", copy1)
+arr1[0] = 100
+print("Original: ", arr1, "Copy: ", copy1)
+copy1[0] = -200
+print("Original: ", arr1, "Copy: ", copy1)
+print(type(copy1), id(copy1), id(arr1))
