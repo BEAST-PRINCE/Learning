@@ -143,15 +143,30 @@ Shape  Reshape
 
 # Searching
 
-x = np.where(arr1 == 6)
-print(arr1, x)
-print(x[0])
-print(arr1[x[0]])
+# x = np.where(arr1 == 6)
+# print(arr1, x)
+# print(x[0])
+# print(arr1[x[0]])
 
 
-x = np.where(arr1 > 0)
-print(arr1, x[0])
+# x = np.where(arr1 > 0)
+# print(arr1, x[0])
 
-x = np.where(arr1 % 3 == 0)
-print(arr1, x[0])
-print(set(arr1))
+# x = np.where(arr1 % 3 == 0)
+# print(arr1, x[0])
+# print(set(arr1))
+
+
+######################################################
+
+# Filtering with Boolean Index Lists
+
+arr8 = np.array([1, 2, 3, 4, 5, 6])
+x = [True, False] * 3
+print(arr8)
+print(arr8[x])
+
+filter = arr8 %2 != 0
+print(arr8)
+print(filter)
+print(arr8[filter])
