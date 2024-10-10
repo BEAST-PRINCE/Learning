@@ -85,10 +85,28 @@ arr6 = np.array([[10,11,12,13,14,15,16], [0,1,2,3,4,5,6]])
 # print(type(view1), id(view1), id(arr1))
 
 
-copy1 = arr1.copy()
-print("Original: ", arr1, "Copy: ", copy1)
-arr1[0] = 100
-print("Original: ", arr1, "Copy: ", copy1)
-copy1[0] = -200
-print("Original: ", arr1, "Copy: ", copy1)
-print(type(copy1), id(copy1), id(arr1))
+# copy1 = arr1.copy()
+# print("Original: ", arr1, "Copy: ", copy1)
+# arr1[0] = 100
+# print("Original: ", arr1, "Copy: ", copy1)
+# copy1[0] = -200
+# print("Original: ", arr1, "Copy: ", copy1)
+# print(type(copy1), id(copy1), id(arr1))
+
+#######################################################
+
+''' 
+Shape  Reshape
+'''
+
+# print(arr1.shape)
+# print(arr6.shape)
+
+copy1 = arr1.reshape(4,3)
+print(copy1, copy1.shape)
+
+# copy2 = arr1.reshape(3,2,2)
+# print(copy2, copy2.shape)
+
+copy3 = copy1.reshape(-1) # Reshape to 1D
+print(copy3, copy3.shape)
