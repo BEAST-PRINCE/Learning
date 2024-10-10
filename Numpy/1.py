@@ -102,11 +102,21 @@ Shape  Reshape
 # print(arr1.shape)
 # print(arr6.shape)
 
-copy1 = arr1.reshape(4,3)
-print(copy1, copy1.shape)
+# copy1 = arr1.reshape(4,3)
+# print(copy1, copy1.shape)
 
 # copy2 = arr1.reshape(3,2,2)
 # print(copy2, copy2.shape)
 
-copy3 = copy1.reshape(-1) # Reshape to 1D
-print(copy3, copy3.shape)
+# copy3 = copy1.reshape(-1) # Reshape to 1D
+# print(copy3, copy3.shape)
+
+#######################################################
+
+copy2 = arr1.reshape(3,2,2)
+print(copy2)
+
+# Using np.nditer()
+
+for i in np.nditer(copy2):
+    print(i)
