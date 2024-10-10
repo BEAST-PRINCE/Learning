@@ -124,16 +124,34 @@ Shape  Reshape
 
 #######################################################
 
-arr7 = np.array([5,8,6,4,2,1,1])
-print(arr7)
-print(np.sort(arr7))
+# arr7 = np.array([5,8,6,4,2,1,1])
+# print(arr7)
+# print(np.sort(arr7))
 
 # Original is not changed
 # A copy is returned
 
-print(arr5)
-print(np.sort(arr5))
+# print(arr5)
+# print(np.sort(arr5))
 
-arr7 = np.array([[8,6,1,3,5], [3,1,9,5,6]])
-print(arr7)
-print(np.sort(arr7))
+# arr7 = np.array([[8,6,1,3,5], [3,1,9,5,6]])
+# print(arr7)
+# print(np.sort(arr7))
+
+
+######################################################
+
+# Searching
+
+x = np.where(arr1 == 6)
+print(arr1, x)
+print(x[0])
+print(arr1[x[0]])
+
+
+x = np.where(arr1 > 0)
+print(arr1, x[0])
+
+x = np.where(arr1 % 3 == 0)
+print(arr1, x[0])
+print(set(arr1))
