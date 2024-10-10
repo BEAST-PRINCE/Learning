@@ -113,10 +113,27 @@ Shape  Reshape
 
 #######################################################
 
-copy2 = arr1.reshape(3,2,2)
-print(copy2)
+# copy2 = arr1.reshape(3,2,2)
+# print(copy2)
 
-# Using np.nditer()
+# # Using np.nditer()
 
-for i in np.nditer(copy2):
-    print(i)
+# for i in np.nditer(copy2):
+#     print(i)
+
+
+#######################################################
+
+arr7 = np.array([5,8,6,4,2,1,1])
+print(arr7)
+print(np.sort(arr7))
+
+# Original is not changed
+# A copy is returned
+
+print(arr5)
+print(np.sort(arr5))
+
+arr7 = np.array([[8,6,1,3,5], [3,1,9,5,6]])
+print(arr7)
+print(np.sort(arr7))
