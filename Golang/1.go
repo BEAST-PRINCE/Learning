@@ -34,11 +34,39 @@ func main() {
 	// fmt.Println(inp, inp2, temp)
 
 	// if else
-	if 5 < 10 {
-		fmt.Println("True")
-	} else if 5 == 10 {
-		fmt.Println("Equals")
-	} else {
-		fmt.Println("False")
+	/*
+		if 5 < 10 {
+			fmt.Println("True")
+		} else if 5 == 10 {
+			fmt.Println("Equals")
+		} else {
+			fmt.Println("False")
+		}
+	*/
+
+	// Loops
+
+	// for is used to act as while loop as welll in go
+
+	x := 0
+	for x < 5 {
+		fmt.Println(x)
+		x++
 	}
+
+	for x := 3; x < 10; x += 2 {
+		fmt.Println(x)
+	}
+
+	x := 5
+	for {
+		if x%5 == 0 {
+			fmt.Println(x)
+		}
+		x += 5
+		if x > 30 {
+			break
+		}
+	}
+
 }
