@@ -47,26 +47,57 @@ func main() {
 	// Loops
 
 	// for is used to act as while loop as welll in go
+	/*
+		x := 0
+		for x < 5 {
+			fmt.Println(x)
+			x++
+		}
+	*/
 
-	x := 0
-	for x < 5 {
-		fmt.Println(x)
-		x++
-	}
-
-	for x := 3; x < 10; x += 2 {
-		fmt.Println(x)
-	}
-
-	x := 5
-	for {
-		if x%5 == 0 {
+	/*
+		for x := 3; x < 10; x += 2 {
 			fmt.Println(x)
 		}
-		x += 5
-		if x > 30 {
-			break
+	*/
+
+	/*
+		x := 5
+		for {
+			if x%5 == 0 {
+				fmt.Println(x)
+			}
+			x += 5
+			if x > 30 {
+				break
+			}
 		}
+	*/
+
+	// Switch
+
+	choice := 5
+	switch choice {
+	case 1, -1:
+		fmt.Println("NO")
+	case 3:
+		fmt.Println("NO")
+	case 5, -5:
+		fmt.Println("YES")
+	case 7:
+		fmt.Println("7")
+	default:
+		fmt.Println("N/A")
+	}
+
+	choice := 10
+	switch {
+	case choice < 10:
+		fmt.Println("Less")
+	case choice == 10:
+		fmt.Println("Equal")
+	case choice > 10:
+		fmt.Println("Greater")
 	}
 
 }
