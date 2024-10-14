@@ -76,28 +76,31 @@ func main() {
 
 	// Switch
 
-	choice := 5
-	switch choice {
-	case 1, -1:
-		fmt.Println("NO")
-	case 3:
-		fmt.Println("NO")
-	case 5, -5:
-		fmt.Println("YES")
-	case 7:
-		fmt.Println("7")
-	default:
-		fmt.Println("N/A")
-	}
+	/*
+		choice := 5
+		switch choice {
+		case 1, -1:
+			fmt.Println("NO")
+		case 3:
+			fmt.Println("NO")
+		case 5, -5:
+			fmt.Println("YES")
+		case 7:
+			fmt.Println("7")
+		default:
+			fmt.Println("N/A")
+		}
+	*/
 
-	choice := 10
-	switch {
-	case choice < 10:
-		fmt.Println("Less")
-	case choice == 10:
-		fmt.Println("Equal")
-	case choice > 10:
-		fmt.Println("Greater")
-	}
-
+	/*
+		choice := 10
+		switch {
+		case choice < 10:
+			fmt.Println("Less")
+		case choice == 10:
+			fmt.Println("Equal")
+		case choice > 10:
+			fmt.Println("Greater")
+		}
+	*/
 }
