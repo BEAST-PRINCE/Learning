@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// Arrays
 
@@ -37,21 +35,23 @@ func main() {
 
 	// Maps
 
-	var mp map[string]int = map[string]int{"z": 26, "a": 1, "b": 2, "c": 3, "d": 4} // MAps are unordered
-	fmt.Println(len(mp), mp)
-	fmt.Println(mp["z"])
-	mp["z"] = -1
-	fmt.Println(mp["z"])
-	delete(mp, "z")
-	delete(mp, "p")
-	fmt.Println(mp)
+	/*
+		var mp map[string]int = map[string]int{"z": 26, "a": 1, "b": 2, "c": 3, "d": 4} // MAps are unordered
+		fmt.Println(len(mp), mp)
+		fmt.Println(mp["z"])
+		mp["z"] = -1
+		fmt.Println(mp["z"])
+		delete(mp, "z")
+		delete(mp, "p")
+		fmt.Println(mp)
 
-	mp1 := make(map[string]int)
-	fmt.Println(len(mp1), mp1)
-	mp1["PC"] = 500
-	fmt.Println(len(mp1), mp1)
+		mp1 := make(map[string]int)
+		fmt.Println(len(mp1), mp1)
+		mp1["PC"] = 500
+		fmt.Println(len(mp1), mp1)
 
-	val, ok := mp1["Laptop"]
-	fmt.Println(val, ok)
+		val, ok := mp1["Laptop"]
+		fmt.Println(val, ok)
+	*/
 
 }
