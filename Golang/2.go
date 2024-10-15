@@ -26,4 +26,9 @@ func main() {
 	arr4 := make([]int, 8) // Make created a Slice
 	fmt.Printf("%T\n", arr4)
 	fmt.Println(len(arr4), arr4)
+
+	for i, element := range arr2 {
+		fmt.Println(i, element)
+	}
+
 }
