@@ -11,23 +11,29 @@ func main() {
 	// Pointers and Dereference
 	fmt.Println("Starting")
 
-	x := 7
-	fmt.Println(&x)
+	/*
+		x := 7
+		fmt.Println(&x)
 
-	y := &x // Pointer
-	fmt.Println(&y)
+		y := &x // Pointer
+		fmt.Println(&y)
 
-	*y = 10 // Dereference
-	fmt.Println(x, y)
+		*y = 10 // Dereference
+		fmt.Println(x, y)
+	*/
 
-	val1 := "String"
-	val2 := "String"
-	changeVal(&val1, val2)
-	fmt.Println(val1, val2)
+	/*
+		val1 := "String"
+		val2 := "String"
+		changeVal(&val1, val2)
+		fmt.Println(val1, val2)
+	*/
 
-	val := "Namaste"
-	var ptr *string = &val // Pointer
-	fmt.Println(ptr, val)
-	fmt.Println(*ptr, val)
-	fmt.Println(ptr, &ptr)
+	/*
+		val := "Namaste"
+		var ptr *string = &val // Pointer
+		fmt.Println(ptr, val)
+		fmt.Println(*ptr, val)
+		fmt.Println(ptr, &ptr)
+	*/
 }
